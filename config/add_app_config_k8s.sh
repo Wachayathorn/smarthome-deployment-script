@@ -1,3 +1,3 @@
 #!/bin/bash
 
-kubectl create configmap smarthome-backend-configs --from-env-file=./backend
+kubectl create configmap smarthome-backend-config --from-env-file=./backend

@@ -10,7 +10,7 @@ metadata:
     nginx.ingress.kubernetes.io/websocket-services: smarthome-backend-service
     nginx.org/websocket-services: smarthome-backend-service
     nginx.ingress.kubernetes.io/server-alias: "smarthome-backend-service"
-    ingress.kubernetes.io/rewrite-target: /
+    ingress.kubernetes.io/rewrite-target: /backend/*
 spec:
   rules:
   - host: mychin.ddns.net

@@ -18,3 +18,7 @@ spec:
         image: wachayathorn/smart_home:latest
         ports:
           - containerPort: 3000
+            protocol: TCP
+        envFrom:
+          - configMapRef:
+              name: smarthome-backend-config

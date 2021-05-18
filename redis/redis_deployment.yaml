@@ -22,7 +22,6 @@ spec:
           ports:
             - containerPort: 6379
               protocol: TCP
-              name: smarthome-redis
           volumeMounts:
             - name: redis-persistent-storage
               mountPath: /db
