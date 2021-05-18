@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: PersistentVolumeClaim
+metadata:
+  name: smarthome-mysql-pv-volume-claim
+  namespace: default
+spec:
+  storageClassName: smarthome-mysql-pv-volume-local
+  accessModes:
+    - ReadWriteOnce
+  resources:
+    requests:
+      storage: 5Gi

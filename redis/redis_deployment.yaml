@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: smarthome-redis
+  namespace: default
+spec:
+  replicas: 1 
+  selector:
+    matchLabels:
+      app: smarthome-redis
+  strategy:
+    type: Recreate
+  template:
+    metadata:
+      labels:
+        app: smarthome-redis
+    spec:
+      containers:
+        - image: redis:6.2.3
+          name: redis
+          imagePullPolicy: IfNotPresent
+          ports:
+            - containerPort: 6379
+              protocol: TCP
+              name: smarthome-redis
+          volumeMounts:
+            - name: redis-persistent-storage
+              mountPath: /db
+      volumes:
+        - name: redis-persistent-storage
+          persistentVolumeClaim:
+            claimName: smarthome-redis-pv-volume-claim

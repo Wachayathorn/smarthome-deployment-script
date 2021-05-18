@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: smarthome-backend
+  namespace: default
+spec:
+  selector:
+    matchLabels:
+      app: smarthome-backend
+  replicas: 1
+  template:
+    metadata:
+      labels:
+        app: smarthome-backend
+    spec:
+      containers:
+      - name: smarthome-backend
+        image: wachayathorn/smart_home:latest
+        ports:
+          - containerPort: 3000
