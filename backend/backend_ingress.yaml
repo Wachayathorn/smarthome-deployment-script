@@ -16,7 +16,7 @@ spec:
   - host: mychin.ddns.net
     http:
       paths:
-      - path: /backend/
+      - path: /
         backend:
           serviceName: smarthome-backend-service
           servicePort: 3000
