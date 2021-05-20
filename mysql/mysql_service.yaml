@@ -8,7 +8,6 @@ spec:
   selector:
     app: smarthome-mysql
   ports:
-    - name: HTTP
-      port: 43306
+    - port: 43306
       targetPort: 3306
       protocol: TCP

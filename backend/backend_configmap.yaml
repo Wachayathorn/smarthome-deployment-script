@@ -7,7 +7,7 @@ data:
   HTTP_PORT: "3000"
   REDIS_SERVER: "redis://smarthome-redis-service.default.svc.cluster.local:6380"
   TYPEORM_TYPE: "mysql"
-  TYPEORM_HOST: "http://smarthome-mysql-service.default.svc.cluster.local"
+  TYPEORM_HOST: "smarthome-mysql-service.default.svc.cluster.local"
   TYPEORM_PORT: "43306"
   TYPEORM_USERNAME: "root"
   TYPEORM_PASSWORD: "P@ssw0rd"

@@ -11,4 +11,3 @@ spec:
     - port: 6380
       targetPort: 6379
       protocol: TCP
-      name: HTTP

@@ -22,3 +22,5 @@ spec:
         envFrom:
           - configMapRef:
               name: smarthome-backend-config
+      imagePullSecrets:
+      - name: docker-secret
