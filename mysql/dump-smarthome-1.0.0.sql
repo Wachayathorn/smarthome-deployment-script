@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.5.62, for Win64 (AMD64)
 --
--- Host: 3.142.219.106    Database: Smart-Home
+-- Host: 3.142.219.106    Database: SMARTHOME
 -- ------------------------------------------------------
 -- Server version	8.0.24
 
@@ -60,7 +60,7 @@ CREATE TABLE `User` (
   `first_access` datetime DEFAULT NULL,
   `last_access` datetime DEFAULT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='User for Smart-Home';
+) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci COMMENT='User for SMARTHOME';
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -140,7 +140,7 @@ LOCK TABLES `device_Light` WRITE;
 UNLOCK TABLES;
 
 --
--- Dumping routines for database 'Smart-Home'
+-- Dumping routines for database 'SMARTHOME'
 --
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
 

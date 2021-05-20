@@ -16,13 +16,14 @@ spec:
         app: smarthome-mysql
     spec:
       containers:
-        - image: mysql:5.7
+        - image: mariadb:10.6.0
           name: smarthome-mysql
           imagePullPolicy: IfNotPresent
           env:
-            - name: MYSQL_ROOT_PASSWORD
-              value: P@ssw0rd@Superuser
-          args: ["--default-authentication-plugin=mysql_native_password"]
+            - name: MARIADB_ROOT_PASSWORD
+              value: P@ssw0rd
+            - name: MARIADB_DATABASE
+              value: SMARTHOME
           ports:
             - containerPort: 3306
               protocol: TCP

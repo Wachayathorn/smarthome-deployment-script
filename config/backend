@@ -7,4 +7,4 @@ TYPEORM_HOST=http://smarthome-mysql-service.default.svc.cluster.local
 TYPEORM_PORT=43306
 TYPEORM_USERNAME=root
 TYPEORM_PASSWORD=P@ssw0rd
-TYPEORM_DATABASE=Smart-Home
+TYPEORM_DATABASE=SMARTHOME
