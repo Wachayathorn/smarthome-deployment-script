@@ -13,7 +13,7 @@ metadata:
     ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: mychin.ddns.net
+  - host: smarthome-server-chban.cpe.com
     http:
       paths:
       - path: /
