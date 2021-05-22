@@ -18,6 +18,13 @@ spec:
       containers:
         - image: mariadb:10.6.0
           name: smarthome-mysql
+          resources:
+            requests:
+              memory: "128Mi"
+              cpu: "64m"
+            limits:
+              memory: "250Mi"
+              cpu: "128m"
           imagePullPolicy: IfNotPresent
           env:
             - name: MARIADB_ROOT_PASSWORD

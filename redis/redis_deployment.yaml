@@ -18,6 +18,13 @@ spec:
       containers:
         - image: redis:6.2.3
           name: redis
+          resources:
+            requests:
+              memory: "64Mi"
+              cpu: "32m"
+            limits:
+              memory: "128Mi"
+              cpu: "64m"
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 6379
