@@ -4,7 +4,7 @@ metadata:
   name: smarthome-mysql-service
   namespace: default
 spec:
-  type: NodePort
+  type: LoadBalancer
   selector:
     app: smarthome-mysql
   ports:
