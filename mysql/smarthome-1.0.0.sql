@@ -29,10 +29,12 @@ CREATE TABLE `Raspberry_Pi` (
   `status` int(11) NOT NULL,
   `update_time` datetime DEFAULT NULL,
   `user_id` int(11) NOT NULL,
+  `position_x` varchar(50) DEFAULT NULL,
+  `position_y` varchar(50) DEFAULT NULL,
   PRIMARY KEY (`Pi_ID`),
   KEY `FK_Raspberry_Pi_User` (`user_id`),
   CONSTRAINT `FK_6a649652c631a22481732c21572` FOREIGN KEY (`user_id`) REFERENCES `User` (`ID`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=33 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -41,7 +43,7 @@ CREATE TABLE `Raspberry_Pi` (
 
 LOCK TABLES `Raspberry_Pi` WRITE;
 /*!40000 ALTER TABLE `Raspberry_Pi` DISABLE KEYS */;
-INSERT INTO `Raspberry_Pi` VALUES (1,'chinnu home','2021-05-22 10:24:23',1,NULL,1),(2,'KUY BLACK','2021-05-22 10:28:21',1,NULL,1),(3,'KUY BLACK','2021-05-22 10:28:21',1,NULL,1),(4,'KUY BLACK','2021-05-22 10:28:21',1,NULL,1);
+INSERT INTO `Raspberry_Pi` VALUES (1,'chinnu home','2021-05-22 10:24:23',1,NULL,1,NULL,NULL);
 /*!40000 ALTER TABLE `Raspberry_Pi` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -152,4 +154,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-05-22 18:21:45
+-- Dump completed on 2021-05-26 18:18:57
