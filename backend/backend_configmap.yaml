@@ -2,12 +2,12 @@ apiVersion: v1
 kind: ConfigMap
 metadata:
   name: smarthome-backend-config
-  namespace: default
+  namespace: smarthome
 data:
   HPPT_PORT: "3000"
-  REDIS_SERVER: "redis://smarthome-redis-service.default.svc.cluster.local:6380"
+  REDIS_SERVER: "redis://smarthome-redis-service.smarthome.svc.cluster.local:6380"
   TYPEORM_TYPE: "mysql"
-  TYPEORM_HOST: "smarthome-mysql-service.default.svc.cluster.local"
+  TYPEORM_HOST: "smarthome-mysql-service.smarthome.svc.cluster.local"
   TYPEORM_PORT: "43306"
   TYPEORM_USERNAME: "root"
   TYPEORM_PASSWORD: "P@ssw0rd"

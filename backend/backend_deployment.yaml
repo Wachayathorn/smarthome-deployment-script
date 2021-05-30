@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata: 
   name: smarthome-backend
-  namespace: default
+  namespace: smarthome
 spec:
   selector:
     matchLabels:
@@ -15,13 +15,13 @@ spec:
     spec:
       containers:
       - name: smarthome-backend
-        image: wachayathorn/smarthome:latest
+        image: wachayathorn/smarthome:1.0.0
         resources:
           requests:
-            memory: "64Mi"
+            memory: "128Mi"
             cpu: "250m"
           limits:
-            memory: "128Mi"
+            memory: "256Mi"
             cpu: "500m"
         ports:
           - containerPort: 3000

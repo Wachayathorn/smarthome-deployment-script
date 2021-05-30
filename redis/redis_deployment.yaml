@@ -2,7 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: smarthome-redis
-  namespace: default
+  namespace: smarthome
 spec:
   replicas: 1 
   selector:
