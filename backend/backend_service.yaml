@@ -4,7 +4,7 @@ metadata:
   name: smarthome-backend-service
   namespace: smarthome
 spec:
-  type: LoadBalancer
+  type: NodePort
   selector:
     app: smarthome-backend
   ports:
