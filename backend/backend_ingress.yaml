@@ -13,7 +13,7 @@ metadata:
   #   ingress.kubernetes.io/rewrite-target: /
 spec:
   rules:
-  - host: smarthome-backend-chban.net
+  - host: smarthome-backend-chban.com
     http:
       paths:
       - path: /
