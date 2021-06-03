@@ -15,7 +15,7 @@ spec:
     spec:
       containers:
       - name: smarthome-backend
-        image: wachayathorn/smarthome:1.0.0
+        image: wachayathorn/smarthome:1.0.0-dev
         resources:
           requests:
             memory: "128Mi"
