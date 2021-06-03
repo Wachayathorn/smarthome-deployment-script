@@ -1,6 +1,6 @@
 -- MySQL dump 10.13  Distrib 5.5.62, for Win64 (AMD64)
 --
--- Host: 3.142.219.106    Database: SMARTHOME
+-- Host: 34.126.183.106    Database: SMARTHOME
 -- ------------------------------------------------------
 -- Server version	5.5.5-10.6.0-MariaDB-1:10.6.0+maria~focal
 
@@ -62,8 +62,10 @@ CREATE TABLE `User` (
   `create_time` datetime NOT NULL,
   `first_access` datetime DEFAULT NULL,
   `last_access` datetime DEFAULT NULL,
+  `username` varchar(128) NOT NULL,
+  `password` varchar(255) NOT NULL,
   PRIMARY KEY (`ID`)
-) ENGINE=InnoDB AUTO_INCREMENT=2 DEFAULT CHARSET=utf8mb4;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8mb4;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -72,7 +74,7 @@ CREATE TABLE `User` (
 
 LOCK TABLES `User` WRITE;
 /*!40000 ALTER TABLE `User` DISABLE KEYS */;
-INSERT INTO `User` VALUES (1,'User for','Development','2021-05-22 09:09:59',NULL,NULL);
+INSERT INTO `User` VALUES (1,'User for','Development','2021-05-22 09:09:59',NULL,NULL,'dev','$2b$09$iV5CCBwz.wES45TaFp8NmOsQyg56IG4GaGmGgK3Gs7ekTs2l.hHO.'),(2,'dev_1','Development','2021-06-03 14:44:48',NULL,NULL,'dev_1','$2b$09$iV5CCBwz.wES45TaFp8NmOsQyg56IG4GaGmGgK3Gs7ekTs2l.hHO.');
 /*!40000 ALTER TABLE `User` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -158,4 +160,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2021-06-01 18:56:54
+-- Dump completed on 2021-06-03 22:25:58
