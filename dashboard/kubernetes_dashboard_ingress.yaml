@@ -11,7 +11,7 @@ metadata:
     nginx.ingress.kubernetes.io/ssl-passthrough: "true"
 spec:
   rules:
-  - host: smarthome-monitor-chban.com
+  - host: kubernetes-dashboard.com
     http:
       paths:
       - path: /
